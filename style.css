@@ -1,0 +1,27 @@
+.abInput {
+    border: 0;
+    border-radius: 5px;
+    background: #14d4ff;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 16px;
+  }
+  
+  .updateButton {
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #4676d7;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 16px;
+  }
+  
+  .updateButton:hover {
+  background: #1d49aa;
+  }
+  
+  .updateButton:active {
+  background: #124f43;
+  }
+  
