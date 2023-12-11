@@ -24,7 +24,7 @@ function removeLastSquare() {
 }
     function removeSquare() {
         const container = document.getElementById('colorSquaresContainer');
-        var colorRemove = document.getElementById('colorRemove').value.toLowerCase();
+        let colorRemove = document.getElementById('colorRemove').value.toLowerCase();
         let squares = container.getElementsByClassName('color-square');
         let j = 0;
         for (let i = squares.length - 1; i >= 0; i--) 
@@ -39,5 +39,12 @@ function removeLastSquare() {
         if (j == 0)
         {
             alert('Цвета нету!')
+        }
+    }
+    function removeAllSquare() {
+        let squares = document.getElementsByClassName('color-square');
+        while(squares[0])
+        {
+            squares[0].parentNode.removeChild(squares[0]);
         }
     }
