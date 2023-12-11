@@ -1,37 +1,37 @@
-function addSquare(color) {
-    let container = document.getElementById('colorSquaresContainer');
-    let square = document.createElement('div');
-    square.className = 'color-square';
-    square.style.backgroundColor = color;
-    container.appendChild(square);
+function addCube(color) {
+    let container = document.getElementById('colorCubeContainer');
+    let cube = document.createElement('div');
+    cube.className = 'color-cube';
+    cube.style.backgroundColor = color;
+    container.appendChild(cube);
 }
 
-function removeFirstSquare() {
-    let container = document.getElementById('colorSquaresContainer');
-    let squares = container.getElementsByClassName('color-square');
-    if (squares.length > 0) {
-        container.removeChild(squares[0]);
+function removeFirstCube() {
+    let container = document.getElementById('colorCubeContainer');
+    let cube = container.getElementsByClassName('color-cube');
+    if (cube.length > 0) {
+        container.removeChild(cube[0]);
     }
 }
 
-function removeLastSquare() {
-    let container = document.getElementById('colorSquaresContainer');
-    let squares = container.getElementsByClassName('color-square');
-    let lastIndex = squares.length - 1;
+function removeLastCube() {
+    let container = document.getElementById('colorCubeContainer');
+    let cube = container.getElementsByClassName('color-cube');
+    let lastIndex = cube.length - 1;
     if (lastIndex >= 0) {
-        container.removeChild(squares[lastIndex]);
+        container.removeChild(cube[lastIndex]);
     }
 }
-    function removeSquare() {
-        const container = document.getElementById('colorSquaresContainer');
+    function removeCube() {
+        const container = document.getElementById('colorCubeContainer');
         let colorRemove = document.getElementById('colorRemove').value.toLowerCase();
-        let squares = container.getElementsByClassName('color-square');
+        let cube = container.getElementsByClassName('color-cube');
         let j = 0;
-        for (let i = squares.length - 1; i >= 0; i--) 
+        for (let i = cube.length - 1; i >= 0; i--) 
         {
-            var squareColor = squares[i].style.backgroundColor.toLowerCase();
-            if (squareColor === colorRemove) {
-                container.removeChild(squares[i]);
+            var cubeColor = cube[i].style.backgroundColor.toLowerCase();
+            if (cubeColor === colorRemove) {
+                container.removeChild(cube[i]);
                 j++;
             }
             
@@ -41,10 +41,10 @@ function removeLastSquare() {
             alert('Цвета нету!')
         }
     }
-    function removeAllSquare() {
-        let squares = document.getElementsByClassName('color-square');
-        while(squares[0])
+    function removeAllCube() {
+        let cube = document.getElementsByClassName('color-cube');
+        while(cube[0])
         {
-            squares[0].parentNode.removeChild(squares[0]);
+            cube[0].parentNode.removeChild(cube[0]);
         }
     }

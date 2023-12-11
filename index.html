@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Calculator</title>
+    <title>Colors Cube</title>
   </head>
  <body>
     <h1>Цветные квадраты!</h1>
-    <div id="colorSquaresContainer" class="myTestinFunct"></div>
+    <div id="colorCubeContainer" class="myTestinFunct"></div>
   <br>
     <div>
-    <button onclick="addSquare('red')">Добавить красный</button>
-    <button onclick="addSquare('green')">Добавить зелёный</button>
-    <button onclick="addSquare('blue')">Добавить синий</button>
+    <button onclick="addCube('red')">Добавить красный</button>
+    <button onclick="addCube('green')">Добавить зелёный</button>
+    <button onclick="addCube('blue')">Добавить синий</button>
   </div>
   <br>
   <div>
-    <button onclick="removeFirstSquare()">Удалить первый</button>
-    <button onclick="removeLastSquare()">Удалить последний</button>
+    <button onclick="removeFirstCube()">Удалить первый</button>
+    <button onclick="removeLastCube()">Удалить последний</button>
   </div>
   <br>
     <div>
@@ -27,11 +27,11 @@
         <option value='green'>Зелёный</option>
         <option value='blue'>Синий</option>
       </select>
-      <button onclick="removeSquare()">Удалить по цвету</button>
+      <button onclick="removeCube()">Удалить по цвету</button>
     </div>
     <br>
     <div>
-      <button onclick="removeAllSquare()">Удалить все цвета</button>
+      <button onclick="removeAllCube()">Удалить все цвета</button>
     </div>
     <script src="script.js"></script>
 </html>
