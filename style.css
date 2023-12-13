@@ -4,15 +4,19 @@
   margin: 5px;
   display: inline-block;
 }
-button, select, option{
-  background-color: #ffffff;
+button,
+select,
+option {
+  background-color: #dddddd;
   border-color: blueviolet;
-  border-width:5px;
+  color: #000000;
+  border-width: 5px;
   border-radius: 10px;
   text-align: center;
   font-size: larger;
   font-family: Arial;
   font-weight: bold;
+  box-shadow: 5px 5px 5px #000000;
 }
 table {
   display: inline-block;
@@ -20,10 +24,11 @@ table {
   min-height: 200;
   border: 1px solid;
 }
-label, div{
+label,
+div {
   text-align: center;
   font-size: larger;
-  font-family:Arial;
+  font-family: Arial;
   font-weight: bold;
 }
 h1 {
@@ -31,6 +36,6 @@ h1 {
   font-family: Arial;
 }
 button:hover {
-background-color: #000000;
-color: aliceblue;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
