@@ -2,36 +2,55 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Colors Cube</title>
+    <title>Animation cards</title>
   </head>
  <body>
-    <h1>Цветные квадраты!</h1>
-    <div id="colorCubeContainer" class="myTestinFunct"></div>
-  <br>
-    <div>
-    <button onclick="addCube('red')">Добавить красный</button>
-    <button onclick="addCube('green')">Добавить зелёный</button>
-    <button onclick="addCube('blue')">Добавить синий</button>
-  </div>
-  <br>
-  <div>
-    <button onclick="removeFirstCube()">Удалить первый</button>
-    <button onclick="removeLastCube()">Удалить последний</button>
-  </div>
-  <br>
-    <div>
-      <label for='colorRemove'>Удалить по цвету:</label>
-      <select id='colorRemove'>
-        <option value='red'>Красный</option>
-        <option value='green'>Зелёный</option>
-        <option value='blue'>Синий</option>
-      </select>
-      <button onclick="removeCube()">Удалить по цвету</button>
+  <div class="wrapper">
+    <div class="container">
+        <input type="radio" name="slide" id="c1" checked>
+        <label for="c1" class="card">
+            <div class="row">
+                <div class="icon">1</div>
+                <div onclick="clickSyte()" class="description" id="myGit" >
+                    <h4>My github</h4>
+                    <p>Click me</p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c2">
+        <label for="c2" class="card">
+            <div class="row">
+                <div class="icon">2</div>
+                <div onclick="clickSyte()" class="description" id="mySyte">
+                    <h4>My test syte github</h4>
+                    <p>Click me</p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c3" >
+        <label for="c3" class="card">
+            <div class="row">
+                <div class="icon">3</div>
+                <div onclick="clickSyte()" class="description" id="mySol">
+                    <h4>My sololearn</h4>
+                    <p>Click me</p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c4" >
+        <label for="c4" class="card">
+            <div class="row">
+                <div class="icon">4</div>
+                <div onclick="clickSyte()" class="description" id="myVk">
+                    <h4>My vk</h4>
+                    <p>Click me</p>
+                </div>
+            </div>
+        </label>
     </div>
-    <br>
-    <div>
-      <button onclick="removeAllCube()">Удалить все цвета</button>
-    </div>
+</div>
+ </body>
     <script src="script.js"></script>
 </html>
