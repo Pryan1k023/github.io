@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("/images/background.gif");
+  background-image: url("images/background.gif");
   background-position: center;
   background-size: cover;
 }
@@ -93,8 +93,8 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-  background-image: url('./images/github.jpg');
+  background-image: url('images/github.jpg');
 }
 .card[for="c2"] {
-  background-image: url('/images/vk.jpg');
+  background-image: url('images/vk.jpg');
 }
